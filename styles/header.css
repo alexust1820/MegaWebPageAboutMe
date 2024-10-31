@@ -1,0 +1,57 @@
+@import './colors.css';
+@import './fonts.css';
+
+.header {
+    height: 60px;
+    color: var(--white-color);
+    background-color: var(--black-blue-color);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: var(--header-logo-size);
+    text-transform: uppercase;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__li {
+    font-size: var(--header-navi-size);
+    margin: 0 0 0 10px;
+}
+
+.header__li:hover {
+    text-decoration: underline 1.5px var(--white-color);
+}
+
+@media screen and (max-width: 1025px) {
+    .header__logo {
+        font-size: var(--header-logo-tablet-size);
+    }
+
+    .header__li {
+        font-size: var(--header-navi-tablet-size);
+    }
+}
+
+@media screen and (max-width: 789px) {
+    .header__logo {
+        font-size: var(--header-logo-phone-size);
+    }
+
+    .header__li {
+        font-size: var(--header-navi-phone-size);
+    }
+}

@@ -1,0 +1,29 @@
+@import './colors.css';
+@import './fonts.css';
+
+h1, h2, h3, h4, h5, h6, div, p, a, li, ol, ul, button, form, body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: none;
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+}
+
+a {
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.header, .hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero {
+    min-height: calc(100vh - 60px);
+    background-color: var(--gray-color);
+    padding-top: 60px;
+}

@@ -1,0 +1,21 @@
+:root {
+    --main-size: 24px;
+    --header-logo-size: 30px;
+    --header-navi-size: 20px;
+    --content-size: 30px;
+    --content-links-size: 48px;
+
+/* Font sizes for tablets */
+    --main-tablets-size: 20px;
+    --header-logo-tablet-size: 25px;
+    --header-navi-tablet-size: 14px;
+    --content-tablets-size: 25px;
+    --content-links-tablets-size: 28px;
+
+/* Font sizes for phones */
+    --main-phone-size: 15px;
+    --header-logo-phone-size: 20px;
+    --header-navi-phone-size: 10px;
+    --content-phone-size: 15px;
+    --content-links-phone-size: 20px;
+}

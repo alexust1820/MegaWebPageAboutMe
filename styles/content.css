@@ -1,0 +1,138 @@
+@import './colors.css';
+@import './fonts.css';
+
+.aboutMe {
+    margin: 0 0 80px 0;
+}
+
+.aboutMe__p {
+    margin: 50px 0;
+    font-size: var(--main-size);
+}
+
+.aboutMe__contacts {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-column-gap: 10px;
+    grid-template-rows: 70px auto;
+}
+
+.aboutMe__contacts__p {
+    font-size: var(--content-size);
+    color: var(--black-blue-color);
+    text-decoration: underline 1.5px solid;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.aboutMe__contacts__link1, .aboutMe__contacts__link2 {
+    text-align: center;
+    color: var(--red-color);
+    background-color: var(--white-color);
+    font-size: var(--content-links-size);
+    border-radius: 10px;
+    align-content: center;
+}
+
+.aboutMe__contacts__link1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.aboutMe__contacts__link2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.photos__p {
+    font-size: var(--content-size);
+    color: var(--black-blue-color);
+    text-decoration: underline 1.5px solid;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin: 0 0 25px 0;
+}
+
+.photos__image1, .photos__image2, .photos__image3 {
+    width: 300px;
+    place-self: center;
+}
+
+@media screen and (max-width: 1025px) {
+    .aboutMe {
+        margin: 0 0 50px 0;
+    }
+
+    .aboutMe__p {
+        margin: 30px 0;
+        font-size: var(--main-tablets-size);
+    }
+
+    .aboutMe__contacts {
+        grid-template-rows: 50px 60px;
+    }
+
+    .aboutMe__contacts__p, .photos__p {
+        font-size: var(--content-tablets-size);
+    }
+
+    .aboutMe__contacts__link1, .aboutMe__contacts__link2 {
+        font-size: var(--content-links-tablets-size);
+    }
+
+    .photos__image1, .photos__image2, .photos__image3 {
+        width: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 789px) {
+    .aboutMe__p {
+        margin: 20px 0;
+        font-size: var(--main-phone-size);
+    }
+
+    .aboutMe__contacts {
+        grid-template-rows: 30px minmax(40px, auto);
+    }
+
+    .aboutMe__contacts__p, .photos__p {
+        font-size: var(--content-phone-size);
+    }
+
+    .aboutMe__contacts__link1, .aboutMe__contacts__link2 {
+        font-size: var(--content-links-phone-size);
+    }
+
+    .aboutMe__contacts__link1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    .aboutMe__contacts__link2 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .photos {
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .photos__p {
+        margin: 0 0 10px 0;
+    }
+
+    .photos__image {
+        width: 250px;
+    }
+}
